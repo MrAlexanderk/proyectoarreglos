@@ -12,6 +12,11 @@
 
 .card {
     height: 100px;
+    transition: scale ease 0.2s;
+}
+.card:hover{
+    scale: 1.05;
+    transition: scale ease 0.2s;
 }
 
 .card img{

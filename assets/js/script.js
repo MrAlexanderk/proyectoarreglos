@@ -31,6 +31,28 @@ const propiedades_alquiler = [
         costo: 2200,
         smoke: false,
         pets: false
+    },
+    {
+        nombre: 'Edificios mirador del cajón',
+        src: 'https://edifica.com.pe/blog/wp-content/uploads/edificio-residencial-.jpg',
+        descripcion: 'Este elegante condominio moderno está ubicado en una tranquila zona residencial',
+        ubicacion: '345 West Street, Anytown, CA 91234',
+        habitaciones: 4,
+        banos: 3,
+        costo: 4500,
+        smoke: false,
+        pets: true
+    },
+    {
+        nombre: 'Condominios Salvatore',
+        src: 'https://www.easydom.com/image/data/header/residenziale.jpg',
+        descripcion: 'Este elegante condominio moderno está ubicado en una tranquila zona residencial',
+        ubicacion: '76 Helm Street, Seaside Town, CA 56789',
+        habitaciones: 2,
+        banos: 5,
+        costo: 1700,
+        smoke: false,
+        pets: true
     }
         
 ]
@@ -66,6 +88,39 @@ const propiedades_venta = [
         habitaciones: 3,
         banos: 3,
         costo: 4500,
+        smoke: false,
+        pets: true
+    },    
+    {
+        nombre: 'Apartamento de lujo en zona exclusiva',
+        src: 'https://www.arquimaster.com.ar/web/wp-content/uploads/2021/01/edificio_residencial_n07_slide.jpg',
+        descripcion: 'Este apartamento está bueno, ojala lo compres.',
+        ubicacion: '1055 Edward Lane, Prestige Suburb, CA 45678',
+        habitaciones: 2,
+        banos: 0,
+        costo: 2000,
+        smoke: false,
+        pets: false
+    },
+    {
+        nombre: 'Apartamento acogedor en la montaña',
+        src: 'https://www.inversurpropiedades.cl/wp-content/uploads/2023/06/Vivir-en-un-condominio-cerrado-o-edificio-residencial.jpg.webp',
+        descripcion: 'Este apartamento acogedor está situado en lo alto de una montaña con impresionantes vistas',
+        ubicacion: '055 satanic Road, Summit Peaks, CA 666',
+        habitaciones: 1,
+        banos: 2,
+        costo: 2200,
+        smoke: true,
+        pets: false
+    },
+    {
+        nombre: 'Penthouse de lujo con terraza panorámica',
+        src: 'https://st4.depositphotos.com/5722792/19804/i/450/depositphotos_198041616-stock-photo-row-white-residential-buildings-balconies.jpg',
+        descripcion: 'Este penthouse de lujo ofrece una terraza panorámica con vistas espectaculares',
+        ubicacion: '567 skynet Avenue, Skyview City, CA 56789',
+        habitaciones: 2,
+        banos: 3,
+        costo: 1700,
         smoke: false,
         pets: true
     }
@@ -107,7 +162,6 @@ function createCard(
     parentSection.appendChild(card);
   }
 
-//const currentPage = document.body.dataset.page === 'alquiler' ? 'alquiler' : 'venta'
 const currentSection = document.getElementById('gallery')
 const propiedades_mostrar = document.body.dataset.page === 'alquiler' ? propiedades_alquiler : propiedades_venta
 
